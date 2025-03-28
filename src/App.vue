@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeaderComponent />
+    <FeaturedOffers />
+    <LoginRegister />
+    <UserRegistration />
+    <PremiumFeatures />
+    <FooterComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/Header.vue';
+import FeaturedOffers from './components/FeaturedOffers.vue';
+import LoginRegister from './components/LoginRegister.vue';
+import UserRegistration from './components/UserRegistration.vue';
+import PremiumFeatures from './components/PremiumFeatures.vue';
+import FooterComponent from './components/Footer.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    FeaturedOffers,
+    LoginRegister,
+    UserRegistration,
+    PremiumFeatures,
+    FooterComponent
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
