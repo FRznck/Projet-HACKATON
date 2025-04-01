@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord Admin - Plateforme de recrutement intelligente</title>
+    <link rel="stylesheet" href="dashboard-admin-CSS/globals.css" />
+    <link rel="stylesheet" href="dashboard-admin-CSS/styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <header class="top-bar">
+        <div class="rectangle" role="img" aria-label="Logo"></div>
+        <h1 class="title">Tableau de bord Admin</h1>
+        <nav class="navbar">
+          <a href="#" class="tab">Tableau de bord Admin</a>
+          <a href="#" class="tab">Gestion des utilisateurs</a>
+          <a href="#" class="tab">Publication d'offres</a>
+          <a href="#" class="tab">Suivi des paiements</a>
+        </nav>
+      </header>
+      <main>
+        <section class="section">
+          <div class="container">
+            <h2 class="text-wrapper">Bienvenue sur notre plateforme de recrutement intelligente</h2>
+            <p class="description">Recrutement efficace et simplifié</p>
+            <div class="input">
+              <label for="search" class="visually-hidden">Rechercher des candidats ou des offres</label>
+              <input id="search" class="textfield" placeholder="Rechercher des candidats ou des offres" type="search" />
+            </div>
+            <button class="button">
+              <span class="primary">Publier une offre</span>
+            </button>
+          </div>
+        </section>
+        <section class="section-2">
+          <div class="avatar" role="img" aria-label="Avatar Admin"></div>
+          <div class="container-2">
+            <h2 class="title-2">Admin</h2>
+            <div class="selection">
+              <span class="label-normal">Super Admin</span>
+            </div>
+            <p class="p">Gérer les utilisateurs et les offres d'emploi</p>
+          </div>
+          <button class="button">
+            <span class="title-wrapper">Ajouter un utilisateur</span>
+          </button>
+          <img class="img" src="https://c.animaapp.com/m8wutr55V3SDFi/img/vector-200.svg" alt="" />
+        </section>
+        <section class="div-2">
+          <h2 class="title-3">Offres d'emploi actives</h2>
+          <div class="list">
+            <div class="row">
+              <article class="item">
+                <div class="icon-wrapper"><span class="icon" role="img" aria-label="Attaché-case">💼</span></div>
+                <div class="div-3">
+                  <h3 class="title-4">Ingénieur logiciel</h3>
+                  <p class="subtitle">Temps plein</p>
+                </div>
+                <p class="subtitle-2">32 candidats</p>
+              </article>
+              <article class="item">
+                <div class="icon-wrapper"><span class="icon" role="img" aria-label="Loupe">🔍</span></div>
+                <div class="div-3">
+                  <h3 class="title-4">Designer UI/UX</h3>
+                  <p class="subtitle">Contrat</p>
+                </div>
+                <p class="subtitle-2">12 candidats</p>
+              </article>
+              <article class="item">
+                <div class="icon-wrapper"><span class="icon" role="img" aria-label="Ordinateur portable">💻</span></div>
+                <div class="div-3">
+                  <h3 class="title-4">Analyste de données</h3>
+                  <p class="subtitle">Télétravail</p>
+                </div>
+                <p class="subtitle-2">20 candidats</p>
+              </article>
+            </div>
+          </div>
+          <img class="vector-2" src="https://c.animaapp.com/m8wutr55V3SDFi/img/vector-200.svg" alt="" />
+        </section>
+        <section class="div-2">
+          <h2 class="title-3">Ajouter un utilisateur</h2>
+          <form class="list">
+            <div class="row-2">
+              <div class="input-2">
+                <label for="full-name" class="title-5">Nom complet</label>
+                <input id="full-name" class="textfield-2" type="text" placeholder="Entrez le nom complet" required />
+              </div>
+              <div class="input-2">
+                <label for="email" class="title-5">Email</label>
+                <input id="email" class="textfield-2" type="email" placeholder="Entrez l'email" required />
+              </div>
+              <fieldset class="selection-2">
+                <legend class="title-5">Rôle</legend>
+                <div class="chip-group">
+                  <label class="chip">
+                    <input type="radio" name="role" value="admin" class="visually-hidden" />
+                    <span class="text-2">Admin</span>
+                  </label>
+                  <label class="chip-2">
+                    <input type="radio" name="role" value="recruiter" class="visually-hidden" />
+                    <span class="text-2">Recruteur</span>
+                  </label>
+                  <label class="chip">
+                    <input type="radio" name="role" value="staff" class="visually-hidden" />
+                    <span class="text-2">Personnel</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <button type="submit" class="button">
+              <span class="primary">Enregistrer l'utilisateur</span>
+            </button>
+          </form>
+          <img class="vector-3" src="https://c.animaapp.com/m8wutr55V3SDFi/img/vector-200.svg" alt="" />
+        </section>
+        <section class="div-2">
+          <h2 class="title-3">Performance du recrutement</h2>
+          <div class="container-3">
+            <div class="container-4">
+              <h3 class="title-6">Tendance des offres d'emploi</h3>
+              <div class="y-axis">Nombre d'offres</div>
+              <img
+                class="graph"
+                src="https://c.animaapp.com/m8wutr55V3SDFi/img/graph.svg"
+                alt="Graphique montrant la tendance des offres d'emploi"
+              />
+              <div class="x-axis">Mois</div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="row-3">
+              <div class="metric">
+                <h4 class="title-7">Nombre total d'utilisateurs</h4>
+                <p class="data">45</p>
+                <p class="change">+3</p>
+              </div>
+              <div class="metric">
+                <h4 class="title-7">Offres d'emploi actives</h4>
+                <p class="data">25</p>
+                <p class="change">-1</p>
+              </div>
+              <div class="metric">
+                <h4 class="title-7">Fonctionnalités premium</h4>
+                <p class="data">7</p>
+                <p class="change">+2</p>
+              </div>
+            </div>
+          </div>
+          <img class="vector-4" src="https://c.animaapp.com/m8wutr55V3SDFi/img/vector-200.svg" alt="" />
+        </section>
+        <section class="section-3">
+          <div class="image-container">
+            <div class="image">
+              <p class="title-8">Passez à la version premium pour des fonctionnalités avancées et une meilleure visibilité</p>
+              <div class="pagination" role="navigation" aria-label="Navigation du carrousel">
+                <div class="rectangle-2" aria-current="true"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-3"></div>
+              </div>
+            </div>
+          </div>
+          <img class="vector-5" src="https://c.animaapp.com/m8wutr55V3SDFi/img/vector-200.svg" alt="" />
+        </section>
+      </main>
+      <footer class="section-4">
+        <div class="container-5">
+          <p class="title-9">Plateforme de recrutement intelligente | © 2021 Tous droits réservés</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
