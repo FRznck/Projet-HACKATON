@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="dashboard-recruteur-CSS/globals.css" />
+    <link rel="stylesheet" href="dashboard-recruteur-CSS/styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="rectangle" aria-hidden="true"></div>
+      <h1 class="title">Recruiter Dashboard</h1>
+      <nav class="navbar">
+        <a href="#add-offer" class="tab">Add Offer</a>
+        <a href="#published-offers" class="tab">Published Offers</a>
+        <a href="#received-applications" class="tab">Received Applications</a>
+        <a href="#premium-messages" class="tab">Premium Messages</a>
+      </nav>
+    </header>
+    <main class="frame">
+      <section id="add-offer" class="section">
+        <div class="container">
+          <h2 class="text-wrapper">Add Offer</h2>
+          <form class="input">
+            <label for="new-offer" class="sr-only">Form for Adding New Offer</label>
+            <input id="new-offer" class="textfield" type="text" placeholder="Form for Adding New Offer" />
+          </form>
+          <button class="button" type="submit">
+            <span class="primary">Submit</span>
+          </button>
+        </div>
+        <img class="vector" src="https://c.animaapp.com/m8wu5zzu9ZGSn9/img/vector-200.svg" alt="" />
+      </section>
+      <section id="published-offers" class="div-2">
+        <div class="container-2">
+          <h2 class="title-2">Published Offers</h2>
+          <div class="button-2">
+            <button class="seconday">Delete</button>
+            <button class="title-wrapper">Edit</button>
+          </div>
+        </div>
+        <ul class="list">
+          <li class="row">
+            <article class="item">
+              <div class="icon-wrapper" aria-hidden="true"><span class="icon">📝</span></div>
+              <div class="div-3">
+                <h3 class="title-4">Job Title 1</h3>
+                <p class="subtitle">Description1</p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="icon-wrapper" aria-hidden="true"><span class="icon">📝</span></div>
+              <div class="div-3">
+                <h3 class="title-4">Job Title 2</h3>
+                <p class="subtitle">Description2</p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="icon-wrapper" aria-hidden="true"><span class="icon">📝</span></div>
+              <div class="div-3">
+                <h3 class="title-4">Job Title 3</h3>
+                <p class="subtitle">Description3</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <img class="img" src="https://c.animaapp.com/m8wu5zzu9ZGSn9/img/vector-200.svg" alt="" />
+      </section>
+      <section id="received-applications" class="div-2">
+        <div class="container-2">
+          <h2 class="title-2">Candidatures reçues</h2>
+        </div>
+        <div class="row-wrapper">
+          <ul class="row-2">
+            <li class="article">
+              <div class="image-container"><div class="image" aria-hidden="true"></div></div>
+              <div class="div-4">
+                <h3 class="title-5">Candidate 1</h3>
+                <p class="p">Details of the candidate 1</p>
+              </div>
+            </li>
+            <li class="article">
+              <div class="image-container"><div class="image" aria-hidden="true"></div></div>
+              <div class="div-4">
+                <h3 class="title-5">Candidate 2</h3>
+                <p class="p">Details of the candidate 2</p>
+              </div>
+            </li>
+            <li class="article">
+              <div class="image-container"><div class="image" aria-hidden="true"></div></div>
+              <div class="div-4">
+                <h3 class="title-5">Candidate 3</h3>
+                <p class="p">Details of the candidate 3</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img class="vector-2" src="https://c.animaapp.com/m8wu5zzu9ZGSn9/img/vector-200.svg" alt="" />
+      </section>
+      <section id="premium-messages" class="form">
+        <div class="div-wrapper">
+          <h2 class="title-6">Premium Messages</h2>
+        </div>
+        <form class="list-2">
+          <div class="input-wrapper">
+            <div class="input-2">
+              <label for="message" class="title-7">Message</label>
+              <textarea id="message" class="textfield" placeholder="Type your message here"></textarea>
+            </div>
+          </div>
+          <button class="button" type="submit">
+            <span class="primary">Send Message</span>
+          </button>
+        </form>
+        <img class="vector-3" src="https://c.animaapp.com/m8wu5zzu9ZGSn9/img/vector-200.svg" alt="" />
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord Candidat</title>
+    <link rel="stylesheet" href="dashboard-candidat-CSS/globals.css" />
+    <link rel="stylesheet" href="dashboard-candidat-CSS/styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <header class="top-bar">
+        <div class="rectangle" role="img" aria-label="Logo"></div>
+        <h1 class="title">Tableau de bord Candidat</h1>
+        <nav class="navbar">
+          <a href="#" class="tab">Accueil</a>
+          <a href="#" class="tab">Offres</a>
+          <a href="#" class="tab">Candidatures</a>
+          <a href="#" class="tab">Profil</a>
+          <form class="textfield" role="search">
+            <label for="site-search" class="visually-hidden">Rechercher sur le site</label>
+            <input
+              type="search"
+              id="site-search"
+              class="text"
+              placeholder="Search in site"
+              aria-label="Rechercher sur le site"
+            />
+            <button type="submit" aria-label="Rechercher">
+              <img
+                class="ic-search"
+                src="https://c.animaapp.com/m8wrk06yj1nBSo/img/ic-search.svg"
+                alt="Icône de recherche"
+              />
+            </button>
+          </form>
+        </nav>
+      </header>
+      <main>
+        <section class="div">
+          <div class="container">
+            <h2 class="text-wrapper">Offres disponibles</h2>
+            <button class="button">
+              <div class="primary"><span class="title-2">Postuler</span></div>
+            </button>
+          </div>
+          <div class="list">
+            <div class="row">
+              <article class="item">
+                <div class="icon-wrapper"><span class="icon" aria-hidden="true">💼</span></div>
+                <div class="div-2">
+                  <h3 class="title-3">Offre 1</h3>
+                  <p class="subtitle">Salaire: $50,000</p>
+                </div>
+                <p class="subtitle-2">Secteur: Informatique</p>
+              </article>
+              <article class="item">
+                <div class="icon-wrapper"><span class="icon" aria-hidden="true">💼</span></div>
+                <div class="div-2">
+                  <h3 class="title-3">Offre 2</h3>
+                  <p class="subtitle">Salaire: $45,000</p>
+                </div>
+                <p class="subtitle-2">Secteur: Marketing</p>
+              </article>
+            </div>
+          </div>
+          <img class="vector" src="https://c.animaapp.com/m8wrk06yj1nBSo/img/vector-200.svg" alt="" />
+        </section>
+        <section class="contents">
+          <div class="title-wrapper"><h2 class="title-4">Candidatures envoyées</h2></div>
+          <div class="row-wrapper">
+            <div class="row-2">
+              <article class="article">
+                <div class="image-container"><div class="image" role="img" aria-label="Image de l'offre 1"></div></div>
+                <div class="div-3">
+                  <h3 class="title-5">Offre 1</h3>
+                  <p class="subtitle-3">En attente</p>
+                  <div class="selection">
+                    <span class="label-normal"><span class="label-text">Salaire: $50,000</span></span>
+                    <span class="label-normal"><span class="label-text">Secteur: Informatique</span></span>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <div class="image-container"><div class="image" role="img" aria-label="Image de l'offre 2"></div></div>
+                <div class="div-3">
+                  <h3 class="title-5">Offre 2</h3>
+                  <p class="subtitle-3">Acceptée</p>
+                  <div class="selection">
+                    <span class="label-normal"><span class="label-text">Salaire: $45,000</span></span>
+                    <span class="label-normal"><span class="label-text">Secteur: Marketing</span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <img class="img" src="https://c.animaapp.com/m8wrk06yj1nBSo/img/vector-200.svg" alt="" />
+        </section>
+        <section class="div">
+          <div class="container"><h2 class="text-wrapper">Contacter le recruteur</h2></div>
+          <form class="list-2">
+            <div class="input-wrapper">
+              <div class="input">
+                <label for="message" class="title-6">Message</label>
+                <div class="div-wrapper">
+                  <textarea id="message" class="text-2" placeholder="Exprimez votre intérêt..."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="button-2">
+              <button class="seconday" disabled><span class="title-7">Premium requis</span></button>
+              <button class="primary-2" type="submit"><span class="title-2">Envoyer</span></button>
+            </div>
+          </form>
+          <img class="vector-2" src="https://c.animaapp.com/m8wrk06yj1nBSo/img/vector-200.svg" alt="" />
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

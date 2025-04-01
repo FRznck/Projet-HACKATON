@@ -1,0 +1,668 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .frame .top-bar {
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px #0000001f;
+  }
+  
+  .frame .rectangle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #0000001a;
+    border-radius: 100px;
+  }
+  
+  .frame .title {
+    flex: 1;
+    font-weight: 500;
+    color: #000000;
+    font-size: 28px;
+    line-height: 36px;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+  }
+  
+  .frame .tab {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .frame .textfield {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    padding: 8px;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #0000001a;
+  }
+  
+  .frame .text {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  
+  .frame .ic-search {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .frame .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 170px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+  
+  .frame .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+  
+  .frame .button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .primary {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #000000;
+    border-radius: 8px;
+  }
+  
+  .frame .title-2 {
+    width: fit-content;
+    margin-top: -1.00px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .frame .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 0px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .frame .icon-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #0000000d;
+    border-radius: 50px;
+  }
+  
+  .frame .icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -1px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 62.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  
+  .frame .div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .title-3 {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .subtitle {
+    position: relative;
+    align-self: stretch;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .frame .subtitle-2 {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    line-height: 36px;
+    position: relative;
+    align-self: stretch;
+    font-family: "Roboto", Helvetica;
+    color: #000000;
+    letter-spacing: 0;
+  }
+  
+  .frame .vector {
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    top: 416px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .frame .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 170px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .frame .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .title-4 {
+    width: 520px;
+    margin-top: -1.00px;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .row-wrapper {
+    align-items: center;
+    padding: 20px 0px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .frame .row-2 {
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #0000001a;
+  }
+  
+  .frame .image-container {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .frame .image {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #d8d8d880;
+  }
+  
+  .frame .div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .frame .title-5 {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    line-height: 28px;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .subtitle-3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    align-self: stretch;
+    font-family: "Roboto", Helvetica;
+    color: #000000;
+    letter-spacing: 0;
+  }
+  
+  .frame .selection {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .label-normal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 2px 4px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #d8d8d880;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 0.5px solid;
+    border-color: #0000001a;
+  }
+  
+  .frame .label-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.50px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .frame .img {
+    top: 400px;
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .frame .list-2 {
+    align-items: flex-start;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .frame .input-wrapper {
+    align-items: flex-start;
+    gap: 80px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .input {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .frame .title-6 {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .div-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #0000001a;
+  }
+  
+  .frame .text-2 {
+    position: relative;
+    flex: 1;
+    height: 20px;
+    margin-top: -1.00px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  
+  .frame .button-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .seconday {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .frame .title-7 {
+    width: fit-content;
+    margin-top: -1.00px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Roboto", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .frame .primary-2 {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+    background-color: #000000;
+    border-radius: 8px;
+  }
+  
+  .frame .vector-2 {
+    top: 268px;
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+  }
+  /* Original CSS code here */
+  
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  
+  .frame .textfield input[type="search"] {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  
+  .frame .textfield button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .frame .div-wrapper textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    font: inherit;
+    color: inherit;
+  }
+  
+  .frame .button-2 button {
+    cursor: pointer;
+  }
+  
+  .frame .button-2 button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  @media (max-width: 768px) {
+    .frame .top-bar,
+    .frame .div,
+    .frame .contents {
+      padding: 20px;
+    }
+  
+    .frame .navbar {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .frame .row,
+    .frame .row-2 {
+      flex-direction: column;
+    }
+  
+    .frame .title-4 {
+      width: 100%;
+    }
+  
+    .frame .input {
+      width: 100%;
+    }
+  }
+  
