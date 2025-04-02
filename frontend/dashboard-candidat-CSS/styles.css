@@ -1,3 +1,34 @@
+.top-bar {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.job-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.offer-card {
+  transition: transform 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.offer-card:hover {
+  transform: translateY(-3px);
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+.vector-line {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 2rem 0;
+}
+
 .frame {
     display: flex;
     flex-direction: column;
