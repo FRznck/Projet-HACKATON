@@ -7,7 +7,7 @@
     <title>Plateforme de Recrutement Intelligent</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index-CSS/styles.css">
-    <script type="module" src="inscription.js" defer></script>
+    <script type="module" src="js/inscription.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="container text-center py-5">
                 <h1 class="display-4 mb-4">Bienvenue sur notre Plateforme de Recrutement Intelligent</h1>
                 <p class="lead mb-5">Trouvez l'emploi de vos rêves ou le candidat idéal en toute simplicité.</p>
-                <button class="btn btn-dark btn-lg">S'inscrire</button>
+                <button class="btn btn-dark btn-lg" onclick="document.querySelector('.form-section').scrollIntoView({ behavior: 'smooth' });">S'inscrire</button>
             </div>
         </section>
 
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <a href="connexion.php" class="text-decoration-none">
+                        <a href="inscription-recruteur.php" class="text-decoration-none">
                             <div class="card h-100 text-center p-4">
                                 <div class="icon-wrapper mx-auto mb-3">💼</div>
                                 <h3>Recruteur</h3>
@@ -89,14 +89,20 @@
         <!-- Formulaire Inscription -->
         <section class="py-5 form-section">
             <div class="container">
-                <h2 class="text-center display-5 mb-5">Inscription Utilisateur</h2>
+                <h2 class="text-center display-5 mb-5">Inscription Candidat </h2>
                 <form class="row g-4">
-                    <!--
+                    
                     <div class="col-md-6">
-                        <label class="form-label">Nom complet</label>
+                        <label class="form-label">Nom </label>
                         <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
                     </div>
-                    -->
+
+                    <div class="col-md-6">
+                        <label class="form-label">Prénom </label>
+                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre prénom" required>
+                    </div>
+
+                   
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
@@ -105,7 +111,7 @@
                         <label class="form-label">Mot de passe</label>
                         <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
                     </div>
-                    <!--
+                    
                     <div class="col-12">
                         <label class="form-label">Profil LinkedIn</label>
                         <input type="url" class="form-control" placeholder="Entrez l'URL de votre profil LinkedIn" required>
@@ -119,30 +125,19 @@
                         <input type="file" class="form-control" accept="image/*" required>
                     </div>
                     <div class="col-12">
-                        <label class="form-label">Rôle</label>
-                        <div class="d-flex gap-2 flex-wrap">
-                            <label class="role-chip">
-                                <input type="radio" name="role" class="visually-hidden" value="candidate">
-                                <span>Candidat</span>
-                            </label>
-                            <label class="role-chip">
-                                <input type="radio" name="role" class="visually-hidden" value="recruiter">
-                                <span>Recruteur</span>
-                            </label>
-                            <label class="role-chip">
-                                <input type="radio" name="role" class="visually-hidden" value="admin">
-                                <span>Admin</span>
-                            </label>
-                        </div>
-                    -->
+                    
+                    
             </div>
             <div class="col-12 d-flex gap-3 justify-content-center">
-                <button type="button" class="btn btn-outline-dark">Connexion</button>
-                <button type="submit" id="submit" class="btn btn-dark">Créer un compte</button>
+            <button type="submit" id="submit" class="btn btn-dark">Créer un compte</button>
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="connexion.php" style="text-decoration: none;">Se connecter ?</a>
+                </button>
+                
                 <div class="input">
                     <button class="btn btn-light btn-lg d-flex align-items-center shadow-sm border rounded-pill px-4 py-2" id="google-login-btn" >
                         <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo" class="me-2" width="24" height="24">
-                        <span class="">Continuer avec Google</span>
+                        <span class="">S'inscrire avec Google</span> <!-- se connecte avec son compte, après on enverra un mail au candidat pour qu'il termine son inscription-->
                     </button>
                 </div>
             </div>

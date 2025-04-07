@@ -13,8 +13,8 @@
         <!-- Hero Section -->
         <section class="custom-hero">
             <div class="container text-center py-5">
-                <h1 class="display-4 mb-4">Connexion à votre compte</h1>
-                <p class="lead mb-5">Accédez à votre espace personnel et commencez votre expérience.</p>
+                <h1 class="display-4 mb-4">Espace Recruteur</h1>
+                <p class="lead mb-5">Le terrain est prêt, <strong>à vous de jouer.</strong></p>
                 <a href="index.php" class="btn btn-outline-light btn-lg">Retour à l'accueil</a>
             </div>
         </section>
@@ -22,10 +22,10 @@
         <!-- Formulaire Connexion -->
         <section class="py-5 form-section">
             <div class="container">
-                <h2 class="text-center display-5 mb-5">Connexion Utilisateur</h2>
+                <h2 class="text-center display-5 mb-5">Vos talents vous attendre !</h2>
                 <form class="row g-4">
                     <div class="col-md-6">
-                        <label class="form-label">Email</label>
+                        <label class="form-label">Email professionnel</label>
                         <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
                     </div>
                     <div class="col-md-6">
@@ -33,13 +33,9 @@
                         <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
                     </div>
                     <div class="col-12 d-flex gap-3 justify-content-center">
-                        <button type="submit" id="submit" class="btn btn-dark">Se connecter</button>
-                        <a href="index.php" class="btn btn-outline-dark">Créer un compte</a>
-                        <div class="input">
-
-                </div>
+                        <button type="submit" id="submit" class="btn btn-dark">Se connecter</button> ou
+                        <a href="inscription-recruteur.php" class="btn btn-outline-dark">Créer un compte</a>
                     </div>
-                    
                 </form>
             </div>
         </section>

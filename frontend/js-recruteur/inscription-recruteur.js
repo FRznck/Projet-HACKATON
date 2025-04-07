@@ -23,7 +23,7 @@ googleButton.addEventListener("click", function (event) {
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const user = result.user;
     console.log(user);
-    window.location.href = "../accueil.php";
+    window.location.href = "/projet-HACKATON/frontend/accueil.php";
     alert("Connexion réussie !");
    
   }).catch((error) => {
@@ -52,7 +52,7 @@ submit.addEventListener("click", function (event) {
       // Signed up 
       const user = userCredential.user;
       alert("Création de compte réussie !");
-      window.location.href = "../accueil.php";
+      window.location.href = "/projet-HACKATON/frontend/accueil.php";
     })
     .catch((error) => {
       const errorCode = error.code;
