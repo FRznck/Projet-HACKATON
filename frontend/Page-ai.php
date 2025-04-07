@@ -20,9 +20,9 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-3">
-                    <li class="nav-item"><a href="accueil.html" class="nav-link fw-medium">Accueil</a></li>
-                    <li class="nav-item"><a href="parametres-candidat.html" class="nav-link fw-medium">Paramètres</a></li>
-                    <li class="nav-item"><a href="dashboard-candidat.html" class="nav-link fw-medium">Mes suivis</a></li>
+                    <li class="nav-item"><a href="accueil.php" class="nav-link fw-medium">Accueil</a></li>
+                    <li class="nav-item"><a href="parametres-candidat.php" class="nav-link fw-medium">Paramètres</a></li>
+                    <li class="nav-item"><a href="dashboard-candidat.php" class="nav-link fw-medium">Mes suivis</a></li>
                 </ul>
                 
                 <form class="d-flex" role="search">

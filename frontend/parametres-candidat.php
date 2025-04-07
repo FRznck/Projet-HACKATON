@@ -19,7 +19,7 @@
                 <a class="navbar-brand fw-medium fs-4" href="#">Plateforme de Recrutement Intelligente</a>
             </div>
             <div class="d-flex align-items-center gap-4">
-                <a href="accueil.html" class="text-dark text-decoration-none">Accueil</a>
+                <a href="accueil.php" class="text-dark text-decoration-none">Accueil</a>
                 <span class="text-dark">Paramètres du compte</span>
             </div>
         </div>
