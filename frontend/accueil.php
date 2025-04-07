@@ -11,7 +11,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="accueil.html">
+      <a class="navbar-brand d-flex align-items-center" href="accueil.php">
         <div class="logo-custom me-2" role="img" aria-label="Logo de la plateforme"></div>
         <span class="h4 mb-0">Plateforme de Recrutement Intelligente</span>
       </a>
@@ -22,13 +22,13 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="accueil.html">Accueil</a>
+            <a class="nav-link" href="accueil.php">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Page-ai.html">Découvrez l'IA</a>
+            <a class="nav-link" href="Page-ai.php">Découvrez l'IA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="dashboard-candidat.html">Mes suivis</a>
+            <a class="nav-link" href="dashboard-candidat.php">Mes suivis</a>
           </li>
         </ul>
 

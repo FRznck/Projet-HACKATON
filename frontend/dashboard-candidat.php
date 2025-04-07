@@ -22,9 +22,9 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a href="accueil.html" class="nav-link fw-medium">Accueil</a></li>
-                    <li class="nav-item"><a href="Page-ai.html" class="nav-link fw-medium">Découvrez l'IA</a></li>
-                    <li class="nav-item"><a href="parametres-candidat.html" class="nav-link fw-medium">Paramètres</a></li>
+                    <li class="nav-item"><a href="accueil.php" class="nav-link fw-medium">Accueil</a></li>
+                    <li class="nav-item"><a href="Page-ai.php" class="nav-link fw-medium">Découvrez l'IA</a></li>
+                    <li class="nav-item"><a href="parametres-candidat.php" class="nav-link fw-medium">Paramètres</a></li>
                 </ul>
                 
                 <form class="d-flex" role="search">
@@ -44,7 +44,7 @@
         <section class="mb-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="h3 fw-bold">Offres disponibles</h2>
-                <a href="accueil.html" class="btn btn-primary">Postuler</a>
+                <a href="accueil.php" class="btn btn-primary">Postuler</a>
             </div>
             
             <div class="row g-4">

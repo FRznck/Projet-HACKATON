@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Plateforme de Recrutement Intelligent</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index-CSS/styles.css">
+    <script type="module" src="inscription.js" defer></script>
 </head>
+
 <body>
     <main class="container-fluid px-0">
         <!-- Hero Section -->
@@ -61,23 +64,23 @@
                 <h2 class="text-center display-5 mb-5">Connexion ou Inscription</h2>
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6">
-                      <a href="#" class="text-decoration-none">
-                        <div class="card h-100 text-center p-4">
-                          <div class="icon-wrapper mx-auto mb-3">👤</div>
-                          <h3>Candidat</h3>
-                          <p class="text-muted">Trouvez l'emploi de vos rêves</p>
-                      </div>
-                      </a> 
+                        <a href="connexion.php" class="text-decoration-none">
+                            <div class="card h-100 text-center p-4">
+                                <div class="icon-wrapper mx-auto mb-3">👤</div>
+                                <h3>Candidat</h3>
+                                <p class="text-muted">Trouvez l'emploi de vos rêves</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-md-6">
-                      <a href="#" class="text-decoration-none">
-                        <div class="card h-100 text-center p-4">
-                          <div class="icon-wrapper mx-auto mb-3">💼</div>
-                          <h3>Recruteur</h3>
-                          <p class="text-muted">Trouvez les meilleurs talents</p>
-                      </div>
-                      </a> 
+                        <a href="connexion.php" class="text-decoration-none">
+                            <div class="card h-100 text-center p-4">
+                                <div class="icon-wrapper mx-auto mb-3">💼</div>
+                                <h3>Recruteur</h3>
+                                <p class="text-muted">Trouvez les meilleurs talents</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -88,18 +91,21 @@
             <div class="container">
                 <h2 class="text-center display-5 mb-5">Inscription Utilisateur</h2>
                 <form class="row g-4">
+                    <!--
                     <div class="col-md-6">
                         <label class="form-label">Nom complet</label>
-                        <input type="text" class="form-control" placeholder="Entrez votre nom" required>
+                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
                     </div>
+                    -->
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="Entrez votre email" required>
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
                     </div>
                     <div class="col-12">
                         <label class="form-label">Mot de passe</label>
-                        <input type="password" class="form-control" placeholder="Entrez votre mot de passe" required>
+                        <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
                     </div>
+                    <!--
                     <div class="col-12">
                         <label class="form-label">Profil LinkedIn</label>
                         <input type="url" class="form-control" placeholder="Entrez l'URL de votre profil LinkedIn" required>
@@ -128,12 +134,19 @@
                                 <span>Admin</span>
                             </label>
                         </div>
-                    </div>
-                    <div class="col-12 d-flex gap-3 justify-content-center">
-                        <button type="button" class="btn btn-outline-dark">Connexion</button>
-                        <button type="submit" class="btn btn-dark">Créer un compte</button>
-                    </div>
-                </form>
+                    -->
+            </div>
+            <div class="col-12 d-flex gap-3 justify-content-center">
+                <button type="button" class="btn btn-outline-dark">Connexion</button>
+                <button type="submit" id="submit" class="btn btn-dark">Créer un compte</button>
+                <div class="input">
+                    <button class="btn btn-light btn-lg d-flex align-items-center shadow-sm border rounded-pill px-4 py-2" id="google-login-btn" >
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo" class="me-2" width="24" height="24">
+                        <span class="">Continuer avec Google</span>
+                    </button>
+                </div>
+            </div>
+            </form>
             </div>
         </section>
 
@@ -168,4 +181,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
