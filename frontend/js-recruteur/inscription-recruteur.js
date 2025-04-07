@@ -12,7 +12,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-auth.languageCode = "fr"; 
+auth.languageCode = "en"; 
 const provider = new GoogleAuthProvider();
 
 //google button
@@ -23,7 +23,7 @@ googleButton.addEventListener("click", function (event) {
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const user = result.user;
     console.log(user);
-    window.location.href = "../accueil.php";
+    window.location.href = "/projet-HACKATON/frontend/accueil.php";
     alert("Connexion réussie !");
    
   }).catch((error) => {
@@ -39,19 +39,25 @@ submit.addEventListener("click", function (event) {
   event.preventDefault();
 
   //inputs
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  if (!email || !password) {
+    alert("Veuillez remplir tous les champs.");
+    return;
+  }
 
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed up 
       const user = userCredential.user;
       alert("Création de compte réussie !");
-      window.location.href = "../accueil.php";
+      window.location.href = "/projet-HACKATON/frontend/accueil.php";
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.error("Erreur lors de la création du compte avec google :",errorCode, errorMessage);
+      console.error("Erreur lors de la création du compte :", errorCode, errorMessage);
+      alert(`Erreur lors de la création du compte: ${errorMessage}`);
     });
 });
