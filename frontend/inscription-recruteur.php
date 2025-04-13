@@ -6,7 +6,7 @@
     <title>Espace recruteur - Plateforme de Recrutement Intelligent</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index-CSS/styles.css">
-    <script type="module" src="js/connexion.js" defer></script>
+    <script type="module" src="js-recruteur/inscription-recruteur.js" defer></script>
 </head>
 <body>
     <main class="container-fluid px-0">
