@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js"; // Mise à jour ici
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBLVewIoMzGKIbxbbBmMQoJtJQgnOaf-74",
@@ -25,13 +25,11 @@ googleButton.addEventListener("click", function (event) {
     console.log(user);
     window.location.href = "/projet-HACKATON/frontend/accueil.php";
     alert("Connexion réussie !");
-   
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-   
   });
-})
+});
 
 //submit button
 const submit = document.getElementById("submit");
@@ -49,12 +47,26 @@ submit.addEventListener("click", function (event) {
 
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed up 
       const user = userCredential.user;
-      alert("Création de compte réussie !");
-      window.location.href = "/projet-HACKATON/frontend/accueil.php";
-    })
-    .catch((error) => {
+
+      // Envoyer un email de vérification
+      sendEmailVerification(user)
+        .then(() => {
+          alert("Un email de vérification a été envoyé.");
+       
+          window.location.href = "/projet-HACKATON/frontend/message-verification.php";
+        })
+        .catch((error) => {
+          console.error("Erreur lors de l'envoi de l'email de vérification :", error);
+         })
+        .catch((error) => {
+          console.error("Erreur lors de la création du compte :", error.code, error.message);
+          alert(`Erreur lors de la création du compte: ${error.message}`);
+        });
+
+        
+
+ 
       const errorCode = error.code;
       const errorMessage = error.message;
       console.error("Erreur lors de la création du compte :", errorCode, errorMessage);

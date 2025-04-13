@@ -16,7 +16,7 @@
         <section class="custom-hero">
             <div class="container text-center py-5">
                 <h1 class="display-4 mb-4">Bienvenue sur notre Plateforme de Recrutement Intelligent</h1>
-                <p class="lead mb-5">Trouvez l'emploi de vos rêves ou le candidat idéal en toute simplicité.</p>
+                <p class="lead mb-5">L'emploi parfait ? Le candidat idéal ? <strong>On vous les sert sur un plateau.</strong> </p>
                 <button class="btn btn-dark btn-lg" onclick="document.querySelector('.form-section').scrollIntoView({ behavior: 'smooth' });">S'inscrire</button>
             </div>
         </section>

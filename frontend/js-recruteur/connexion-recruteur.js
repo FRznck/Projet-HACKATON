@@ -27,7 +27,7 @@ submit.addEventListener("click", function (event) {
       // Connexion réussie 
       const user = userCredential.user;
       alert("Connexion réussie !");
-      window.location.href = "accueil.php"; // Redirection après connexion
+      window.location.href = "dashboard-recruteur.php"; // Redirection après connexion
     })
     .catch((error) => {
       const errorCode = error.code;
